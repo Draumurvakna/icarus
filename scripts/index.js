@@ -5,7 +5,7 @@ const logger = require('hexo-log')();
  * Print welcome message
  */
 logger.info(`===================================
-iMaeGoo's Blog - Powered by Hexo & Icarus
+Yulin Chen's Blog - Powered by Hexo & Icarus
 =========================================`);
 
 /**
