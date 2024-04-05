@@ -71,11 +71,13 @@ body:before
 
 // Card fixes
 .card
+    backdrop-filter: blur(20px)
+    -webkit-backdrop-filter: blur(20px)
     overflow: visible
     transition: background-color 0.5s ease
-    background-color: rgba(255,255,255,0.95)
+    background-color: rgba(255,255,255,0.5)
     &:hover
-        background-color: rgba(255,255,255,1)
+        background-color: rgba(255,255,255,0.75)
     &.card-transparent
         background-color: transparent !important
         .level-start,
