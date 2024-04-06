@@ -1,5 +1,5 @@
 const { Component, Fragment } = require('inferno');
-const { toMomentLocale } = require('hexo/lib/plugins/helper/date');
+const { toMomentLocale } = require('hexo/dist/plugins/helper/date');
 const Plugins = require('./plugins');
 
 module.exports = class extends Component {
@@ -32,7 +32,7 @@ module.exports = class extends Component {
         return <Fragment>
             <script src={cdn('jquery', '3.3.1', 'dist/jquery.min.js')}></script>
             <script src={cdn('moment', '2.22.2', 'min/moment-with-locales.min.js')}></script>
-            {config.comment.jsUrl && <script src={config.comment.jsUrl}></script>}
+            {config.comment?.js_url && <script src={config.comment.js_url}></script>}
             {clipboard && <script src={cdn('clipboard', '2.0.4', 'dist/clipboard.min.js')} defer></script>}
             <script dangerouslySetInnerHTML={{ __html: `moment.locale("${language}");` }}></script>
             <script dangerouslySetInnerHTML={{ __html: embeddedConfig }}></script>
