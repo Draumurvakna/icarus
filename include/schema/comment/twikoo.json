@@ -8,27 +8,10 @@
       "type": "string",
       "const": "twikoo"
     },
-    "env_id": {
+    "envId": {
       "type": "string",
-      "description": "envId from Tencent CloudBase or Vercel URL"
-    },
-    "region": {
-      "type": "string",
-      "description": "Region of Tencent CloudBase",
-      "nullable": true
-    },
-    "lang": {
-      "type": "string",
-      "description": "i18n support",
-      "default": "zh-CN",
-      "nullable": true
-    },
-    "js_url": {
-      "type": "string",
-      "description": "twikoo.all.min.js URL",
-      "default": "zh-CN",
-      "nullable": true
+      "description": "envId from Tencent CloudBase"
     }
   },
-  "required": ["type", "env_id"]
+  "required": ["type", "envId"]
 }
